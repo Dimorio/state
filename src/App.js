@@ -6,23 +6,17 @@ function App() {
   const [searchValue, setSearchValue] = useState("");
 
   const getMovie = async () => {
-    try {
-      const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=13579dab`;
-      const response = await fetch(url);
-      const responseJson = await response.json();
-      console.log(responseJson);
-      setMovies(responseJson.Search);
-    } catch (e) {
-      console.log(e);
-    }
+    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=13579dab`;
+    const response = await fetch(url);
+    const responseJson = await response.json();
+    console.log(responseJson);
+    setMovies(responseJson.Search);
   };
   useEffect(() => {
-    getMovie();
+    setTimeout(() => {
+      getMovie();
+    }, 2000);
   }, [searchValue]);
-
-  // setTimeout(() => {
-  //   getMovie();
-  // }, 2000);
 
   return (
     <div className="">
