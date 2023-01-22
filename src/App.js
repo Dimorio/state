@@ -17,10 +17,12 @@ function App() {
     }
   };
   useEffect(() => {
-    setTimeout(() => {
-      getMovie();
-    }, 2000);
+    getMovie();
   }, [searchValue]);
+
+  // setTimeout(() => {
+  //   getMovie();
+  // }, 2000);
 
   return (
     <div className="">
