@@ -7,13 +7,106 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #141414;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  word-break: break-all;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 img {
-  width: 100%;
-  height: 150px;
+  width: 400px;
+  height: auto;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-width: 100%;
+}
+.info {
+  gap: 5px;
+  margin-top: 2px;
+}
+.content-all {
+  cursor: pointer;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.infooo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.infooo img {
+  width: 400px;
+  padding-right: 1.2rem;
+}
+.split {
+  display: flex;
+  gap: 1.5rem;
+  text-align: center;
+}
+.items_all {
+  color: white;
+}
+.grid_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.overview {
+  margin-top: 1rem;
+}
+.grid-this {
+  width: 100%;
+  display: grid;
+  grid-row: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  place-items: center;
+  place-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.over-content {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.image p {
+  text-align: center;
+}
+.main-img {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-img p {
+  text-align: center;
+}
+.btn-boy {
+  width: fit-content;
+}
+.grid-this img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+.logo-container img {
+  width: 100px;
+  object-fit: contain;
+  margin-right: 1rem;
 }
