@@ -1,11 +1,16 @@
 import React from 'react'
+import styled from 'styled-components'
 
 const Soon = () => {
   return (
-    <div className='text-white text-center'>
+    <Wrapper className='text-white text-center'>
         <h1 className='text-center'>Page Coming Soon</h1>
-    </div>
+    </Wrapper>
   )
 }
 
 export default Soon
+const Wrapper = styled.div`
+    text-align: center;
+    color: white;
+`

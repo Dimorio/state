@@ -7,7 +7,7 @@ import Home from "./pages/Pages";
 
 function App() {
   return (
-    <div className=" px-[15px] max-w-[1100px] m-auto">
+    <div className=" px-[15px] max-w-[1400px] m-auto pb-[1rem]">
       <BrowserRouter>
         <SearchBox />
         <Pages />
