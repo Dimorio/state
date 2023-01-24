@@ -27,7 +27,7 @@ const Searched = () => {
   },[params.search])
     return (
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-auto">
-         {searchedmovies.map((item)=>{
+         {searchedmovies.length > 0 ? searchedmovies.map((item)=>{
           return(
             <>
              <Link to={'/query/' + (item.id + item.name ? item.name:item.title)}>
@@ -47,7 +47,7 @@ const Searched = () => {
              </Link>
             </>
           )
-         })}
+         }) : <p className="text-center text-white">Page Not Found</p>}
       </div>
     )
 }
